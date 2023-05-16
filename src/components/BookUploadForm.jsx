@@ -30,19 +30,19 @@ const handleSubmit = event =>{
   event.preventDefault()
 
   const form = event.target;
-  const bookName = form.bookName.value
-  const authorName = form.authorName.value
-  const imgUrl = form.imgUrl.value
+  const bookname = form.bookname.value
+  const authorname = form.authorname.value
+  const img_url = form.img_url.value
   const categoryName = form.categoryName.value
   const description = form.description.value
-  const pdf = form.pdf.value
+  const  pdf_url = form.pdf_url.value
   const dataObj = {
-   bookName,
-   authorName,
-   imgUrl,
+    bookname,
+    authorname,
+    img_url,
    categoryName,
    description,
-   pdf
+   pdf:  pdf_url
   }
   console.log(dataObj)
 
@@ -65,13 +65,13 @@ const handleSubmit = event =>{
           <label for="inputEmail4" class="form-label">
             Book Name
           </label>
-          <input type="text" name="bookName" class="form-control" id="inputEmail4" />
+          <input type="text" name="bookname" class="form-control" id="inputEmail4" />
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">
             Author Name
           </label>
-          <input type="text" name="authorName" class="form-control" id="inputPassword4" />
+          <input type="text" name="authorname" class="form-control" id="inputPassword4" />
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">
@@ -79,7 +79,7 @@ const handleSubmit = event =>{
           </label>
           <input
             type="url"
-            name="imgUrl"
+            name="img_url"
             class="form-control"
             id="inputAddress"
             
@@ -118,7 +118,7 @@ const handleSubmit = event =>{
           <label for="inputZip" class="form-label">
           Book PDF Url
           </label>
-          <input type="url" name="pdf" class="form-control" id="inputZip" />
+          <input type="url" name="pdf_url" class="form-control" id="inputZip" />
         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary">

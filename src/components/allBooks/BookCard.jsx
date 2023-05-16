@@ -15,6 +15,9 @@ const BookCard = ({book}) => {
         <div class="card-body">
           <h5 class="card-title">{bookname}</h5>
           <p class="card-text">
+           {authorname}
+          </p>
+          <p class="card-text">
            {description}
           </p>
         </div>
